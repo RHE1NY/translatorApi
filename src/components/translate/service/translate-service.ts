@@ -1,5 +1,5 @@
 import axios from "axios";
-import {checkWrongFormat, setTranslatedText, setTranslateStatus} from "../../reducers/TranslateReducer";
+import {setWrongFormat, setTranslatedText, setTranslateStatus} from "../../reducers/TranslateReducer";
 
 export class TranslateService {
 
@@ -19,7 +19,7 @@ export class TranslateService {
         };
         return async function(dispatch:any) {
             axios.request(options as any).then(function (response) {
-                dispatch(checkWrongFormat(response.data.map((language: any) => language.language)))
+                dispatch(setWrongFormat(response.data.map((language: any) => language.language)))
             }).catch(function (error) {
                 console.error(error);
             });

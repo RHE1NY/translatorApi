@@ -1,0 +1,141 @@
+.translate_language-section {
+    display: flex;
+    justify-content: center;
+    gap:3%;
+    text-align: center;
+    height: 40rem;
+}
+
+.heart-favorite {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: -5%;
+    margin-top: 60px;
+    position: relative;
+    height: 1px;
+    cursor: pointer;
+    color: #ff0000;
+}
+
+.heart-favorite-exist {
+    font-size: 28px;
+    font-weight: bold;
+    margin-left: -5%;
+    margin-top: 60px;
+    position: relative;
+    height: 1px;
+    cursor: pointer;
+    color: #090000;
+}
+.translate_area-section {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+.heart-favorite-exist:hover {
+    color: red;
+}
+.translate_input  {
+    resize: none;
+    border-radius: 4%;
+    margin-top: 50px;
+    padding: 30px;
+    height: 100px;
+    background: #d9ceac;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    width: 27%;
+    color: #041eda;
+    font-size: 1.25rem;
+}
+.heart-favorite:hover {
+    color: rgba(159, 60, 255, 0.82);
+    font-weight: bold;
+}
+@media all and (max-width: 1200px) {
+    .translate_language-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: -10%;
+    }
+    .translate_input  {
+        padding: 30px;
+        background: #b48080;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        width: 32%;
+        height: 23%;
+        color: #041eda;
+        font-size: 1.25rem;
+    }
+    .heart-favorite-exist {
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: -5%;
+        margin-top: -10%;
+        position: relative;
+        height: 1px;
+        cursor: pointer;
+        color: #090000;
+    }
+    .heart-favorite {
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: -8%;
+        margin-top: -10%;
+        position: relative;
+        height: 1px;
+        cursor: pointer;
+        color: #090000;
+    }
+}
+
+@media all and (max-width: 940px) {
+    .translate_language-section {
+        margin-top: -14%;
+        padding-right: 3%;
+    }
+    .translate_input  {
+        background: #b48080;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        width: 40%;
+        padding: 0px;
+        flex-direction: column;
+        color: #041eda;
+    }
+}
+@media all and (max-width: 700px) {
+    .translate_input  {
+        background: #b48080;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        width: 80%;
+        height: 100%;
+        padding:30px;
+        margin-top: 40%;
+        flex-direction: column;
+        color: #041eda;
+    }
+
+    .heart-favorite-exist {
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 81%;
+        margin-top: 82%;
+        position: absolute;
+        height: 1px;
+        cursor: pointer;
+        color: #090000;
+    }
+    .heart-favorite {
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: 81%;
+        margin-top: 82%;
+        position: absolute;
+        height: 1px;
+        cursor: pointer;
+        color: #090000;
+    }
+}

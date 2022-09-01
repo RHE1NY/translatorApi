@@ -1,38 +1,75 @@
-.navbar_section {
-    display: flex;
-    padding: 15px 0;
-    justify-content: center;
-    position: relative;
-    gap: 20%;
-    background-color: palevioletred;
+.navbar_links {
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+.navbar_links_passive:hover,
+.navbar_links:hover {
+    color: rgba(159, 60, 255, 0.82);
 }
 
-.navbar_links {
+.navbar_section {
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+    position: relative;
+    gap: 15%;
+    transition: color 500ms linear, background-color 500ms linear;
+}
+
+.navbar_links_passive {
     font-size: 2rem;
     font-weight: bold;
     text-decoration: none;
     color: white;
 }
-.menu_navlinks a {
-    font-size: 24px;
-    padding-left: 66px;
-    text-decoration: none;
-    color: #f15656;
-    font-weight: bold;
+
+.switch-theme {
+    font-size: 25px;
+    cursor: pointer;
 }
 
-.menu_navlinks a:hover {
-    color: #181616;
-    font-weight: bold;
+@media all and  (max-width: 1200px) {
+    .navbar_section {
+        display: flex;
+        padding-top: 10rem;
+        position: relative;
+        align-items: center;
+        font-size: 2rem;
+        transition: color 500ms linear, background-color 500ms linear;
+    }
+    .navbar_links {
+        font-size: 3rem;
+    }
+    .navbar_links_passive {
+        font-size: 3rem;
+    }
+    .switch-theme {
+        font-size: 45px;
+        margin-top: 2%;
+        cursor: pointer;
+    }
 }
-.menu_navlinks a:active {
-    color: #181616;
-    font-weight: bold;
+
+@media all and (max-width: 940px) {
+    .navbar_section {
+        padding-top: 2rem;
+        font-size: 1.7rem;
+        transition: color 500ms linear, background-color 500ms linear;
+    }
 }
-.menu_navlinks a.active {
-    color: #181616;
-    font-weight: bold;
-}
-.navbar_links:hover {
-    color: #041eda;
+
+@media all and (max-width: 550px) {
+    .navbar_links {
+        font-size: 1.7rem;
+    }
+    .navbar_links_passive {
+        font-size: 1.7rem;
+    }
+    .switch-theme {
+        font-size: 30px;
+        margin-top: 2%;
+        cursor: pointer;
+    }
 }

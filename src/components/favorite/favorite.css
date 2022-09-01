@@ -1,0 +1,77 @@
+.sidenav {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #7a7272;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: var(--text-color);
+    opacity: 80%;
+}
+
+.hide-favorite-tab {
+    cursor: pointer;
+    font-size: 3.3rem;
+    padding: 0 10px;
+    margin-top: -28px;
+    justify-content: right;
+    display: flex;
+    height: 1px;
+    color: var(--text-color);
+}
+.hide-favorite-tab:hover {
+    color: plum;
+
+}
+.favorite-list-section {
+    padding: 10px 10px;
+    text-align: center;
+}
+
+.favorite-list-value {
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.favorite-list-remove {
+    font-size: 25px;
+    color: gold;
+    height: 5px;
+    margin-top: -10px;
+    padding-left: 17.5rem;
+    cursor: pointer;
+}
+
+.favorite-list-remove:hover {
+    color: black;
+}
+
+@media all and (max-width: 1200px) {
+    .sidenav {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #7a7272;
+        overflow-x: hidden;
+        margin-top: 5%;
+        color: var(--text-color);
+        opacity: 80%;
+    }
+}
+@media all and (max-width: 700px) {
+    .sidenav {
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        background-color: #7a7272;
+        overflow-x: hidden;
+        margin-top: 5%;
+        color: var(--text-color);
+        opacity: 80%;
+    }
+}
