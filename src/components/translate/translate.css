@@ -19,6 +19,39 @@
 .switch-arrows:hover {
     color: red;
 }
+@media all and (max-width: 940px) {
+    .translate_prompt-language {
+        position: absolute;
+        font-size: 1rem;
+        color: white;
+        height: 0.7rem;
+        background-color: #5a6c6e;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        border-radius: 5%;
+        cursor: pointer;
+        padding: 10px 10px;
+        margin: 25% 54% 0 0;
+    }
+}
+@media all and (max-width: 700px) {
+    .translate_language-section {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+    }
+    .favorite-section {
+        display: flex;
+        margin-top: 10%;
+        padding-left: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .switch-arrows {
+        margin-top: -40%;
+        font-size: 20px;
+        cursor: pointer;
+        height: 2px;
+    }
 
 .section-selector-value {
     border-radius: 4%;
@@ -179,7 +212,7 @@
         align-items: center;
     }
 }
-
+}
 @media all and (max-width: 550px) {
     .switch-arrows {
         margin-top: -40%;

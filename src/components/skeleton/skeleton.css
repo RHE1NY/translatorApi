@@ -1,6 +1,4 @@
 .lds-hourglass {
-    display: flex;
-    justify-content: center;
 }
 
 .lds-hourglass:after {
@@ -10,7 +8,7 @@
     width: 0;
     height: 0;
     box-sizing: border-box;
-    border: 32px solid #fff;
+    border: 15px solid #fff;
     border-color: blue transparent yellow transparent;
     animation: lds-hourglass 1.2s infinite;
 }
