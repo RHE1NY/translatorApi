@@ -92,6 +92,16 @@
     color: black;
 }
 
+.error {
+    color: #bd3f3f;
+    position: absolute;
+    padding-left: 45%;
+    margin-top: -20%;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
 @media all and (max-width: 1200px) {
     .switch-arrows {
         margin-top: -25%;

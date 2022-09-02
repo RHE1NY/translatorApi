@@ -27,6 +27,7 @@ const Translate = () => {
   const [openFavoriteTab, setShowFavoriteTab] = useState(false);
   const [openLanguagesSelector, setOpenLanguagesSelector] = useState(false);
   const debounceTranslate = useDebounce(textToTranslate, 250);
+  const error: string = useAppSelector((state) => state.translate.error);
   const dispatch = useDispatch();
   useEffect(() => {
     if (debounceTranslate.length) {
@@ -133,6 +134,7 @@ const Translate = () => {
           </div>
         </>
       )}
+      {error.length && <span className="error">{error}</span>}
       {!openLanguagesSelector && (
         <div className="favorite-section">
           <img
